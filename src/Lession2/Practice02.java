@@ -28,6 +28,7 @@ public class Practice02 {
 		int answer = calculate(a,b,c,d,e);
 		System.out.println(answer);
 	}
+    
 	// print out:a^2+(b%c-d)*e
 	public static int calculate(int a,int b,int c,int d,int e);{
 	 int p =multiple(a*a);
