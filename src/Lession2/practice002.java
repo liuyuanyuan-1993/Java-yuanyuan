@@ -23,14 +23,17 @@ public class practice002 {
 		int m = mod(b, c);
 		int n = sub(m, d);
 		int o = multiple(n, e);
-		int result = add(p, o);
-		return result;
+		int t = add(p, o);
+		return t;
 
 	}
 
-	public static int mod(int a, int b) {
-		return a % b;
-	}
+	//||
+	
+	/*
+	 * public static int mod(int a, int b) {
+	 * System.out.println(java.lang.Byte.MAX_VALUE); return a % b; }
+	 */
 
 	public static int sub(int a, int b) {
 		return a - b;

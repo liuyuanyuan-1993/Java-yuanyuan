@@ -12,9 +12,14 @@ public class practice02 {
 		 * µÈ²îÊýÁÐ£»(n+1)*n/2
 		 */
 		 Scanner scan = new Scanner(System.in);
-		    int n = scan.nextInt(); 
-	
-	    	 System.out.println((n+1)*n/2);
-	}
-	
+		 int x= scan.nextInt();
+		 
+		int result =0;
+		for(int i=1;i<=x;i++)
+		{//result=i+result;
+		result += i;
+		
+		}
+		System.out.println(result);	
 }
+	}

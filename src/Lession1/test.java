@@ -1,10 +1,12 @@
+package Lession1;
 
-public class test4 {
+public class test {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		print();
+
 	}
 	
 	public static void print() {
@@ -16,6 +18,8 @@ public class test4 {
 
 	public static void print1() {
 
-		System.out.println ("Hello java");
+		System.out.println ("morning");
+
+		
 	}
 }
