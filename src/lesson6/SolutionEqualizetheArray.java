@@ -17,10 +17,11 @@ public class SolutionEqualizetheArray {
 	    	//变量的声明，定义不能写进for循环里
 	     	int m=0; 
 	    	for(int i=0; i<arr.length; i++) {
-	    		x[arr[i]]++;
-	
-	    	if(x[arr[i]]>m) 
-	    		m=x[arr[i]];
+	    		/* x[arr[i]-1]++;
+					if(update_max < x[arr[i]-1]) 
+						update_max = x[arr[i]-1];
+				 */
+	    	m=Math.max(++x[arr[i]],m);
 	    }
 	    	//arr的长度减掉x数组里出现次数最多的值
 	    	return arr.length-m;
