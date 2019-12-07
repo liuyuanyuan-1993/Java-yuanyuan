@@ -11,17 +11,17 @@ import java.util.regex.*;
 public class SolutionEqualizetheArray {
 	    // Complete the equalizeArray function below.
 	    static int equalizeArray(int[] arr) {
-
+	
 	    	int[]  x = new int[101];
 	    	//先遍历arr数组然后叠加到x数组中
+	    	//变量的声明，定义不能写进for循环里
+	     	int m=0; 
 	    	for(int i=0; i<arr.length; i++) {
-	    		x[arr[i]]++;}
-	    	int m=0;
-	    	//再遍历一次x数组找到最大值  	
-	    	for(int i=0;i<x.length;i++) {
-	    		if(x[i]>m )
-	    			m=x[i];
-	    	}
+	    		x[arr[i]]++;
+	
+	    	if(x[arr[i]]>m) 
+	    		m=x[arr[i]];
+	    }
 	    	//arr的长度减掉x数组里出现次数最多的值
 	    	return arr.length-m;
 	    	
@@ -51,7 +51,7 @@ public class SolutionEqualizetheArray {
 	        bufferedWriter.newLine();
 
 	        bufferedWriter.close();
-
+    
 	        scanner.close();
 	    }
 	}
