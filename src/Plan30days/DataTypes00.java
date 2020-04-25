@@ -28,12 +28,14 @@ public class DataTypes00 {
         /* Concatenate and print the String variables on a new line; 
         	the 's' variable above should be printed first. */
         int a = scan.nextInt();
-        double b = scan.nextDouble();
         
-        //string 类型要多打这句话，否则只能打印出第一个空格前面的内容
-        scan.nextLine();
+        
+      //double 类型后面有小数点，有空格，所以要多打这句话，
+   //否则后面的string类型只能打印出第一个空格前面的内容 除非把double放到最后
+        //scan.nextLine();
         String c =  scan.nextLine();
-
+        
+        double b = scan.nextDouble();
      
         System.out.println(i+a);
         System.out.println(d+b);
