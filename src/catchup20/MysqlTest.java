@@ -11,7 +11,7 @@ public class MysqlTest {
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		try (
 				//setup database connection
-				Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/sales", "root", "123456");
+				Connection conn = DriverManager.getConnection("jdbc:mysql://192.168.1.109:3306/sales", "root", "123456");
 				Statement stmt = conn.createStatement();
 				ResultSet rs = stmt.executeQuery("select * from product_tbl");) {
 			while (rs.next()) {
