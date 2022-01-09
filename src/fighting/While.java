@@ -21,6 +21,18 @@ public class While {
 			j++;
 			
 		}
+		 System.out.println("=================");
+		//初始化语句
+		int z =1;
+		do {
+			//循环体语句
+			System.out.println("Hello World");
+			//条件控制语句
+			z++;
+			//条件判断语句
+		}while(z<=5);
+			
+		}
 	}
 
 }
