@@ -31,8 +31,19 @@ public class While {
 			z++;
 			//条件判断语句
 		}while(z<=5);
-			
+		
+		//死循环
+		for(;;) {
+			System.out.println(" Hello");
 		}
+		
+//		while(true) {
+//			System.out.println(" World");
+//		}
+		
+   }
+	
+	
 	}
 
-}
+
